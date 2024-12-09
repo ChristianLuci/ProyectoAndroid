@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_degradado"
+    tools:context=".InicioSesion">
+
+    <TextView
+        android:id="@+id/tvInicioSesion"
+        android:layout_width="371dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="104dp"
+        android:text="Inicio de Sesión"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tvUsuario"
+        android:layout_width="216dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Nombre de usuario"
+        android:inputType="text"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvInicioSesion" />
+
+    <EditText
+        android:id="@+id/tvPassword"
+        android:layout_width="219dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuario" />
+
+    <Button
+        android:id="@+id/bRegistrarse"
+        android:layout_width="127dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/press_boton"
+        android:text="Registrarse"
+        android:textColor="@drawable/color_texto_botones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+    <Button
+        android:id="@+id/bIniciarSesion"
+        android:layout_width="125dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/press_boton"
+        android:text="Iniciar sesión"
+        android:textColor="@drawable/color_texto_botones"
+        app:layout_constraintStart_toEndOf="@+id/bRegistrarse"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+
+    <TextView
+        android:id="@+id/tvAlerta"
+        android:layout_width="284dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>
